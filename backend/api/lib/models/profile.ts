@@ -1,0 +1,37 @@
+export class Profile {
+    name: string;
+    wkn: string;
+    ceo: string;
+    index: string;
+    premium: boolean;
+    date: number;
+    bid: number;
+    ask: number;
+    price: number;
+    sw: number;
+    fp: number;
+    bbw: number;
+    bw: number;
+    activity: number;
+    pBw14: number;
+    pBw30: number;
+    pBw60: number;
+    pBw90: number;
+    pFp14: number;
+    pFp30: number;
+    pFp60: number;
+    pFp90: number;
+    registration: number;
+    foundation: number;
+    dividend: number;
+    maxCertificate: number;
+    growthHighscore: number;
+    sizeHighscore: number;
+    acquirable: boolean;
+    agsx: number;
+    cashTotal: number;
+    creditTotal: number;
+    bondTotal: number;
+    sharesOutstanding: number;
+    portfolioValue: number;
+}
