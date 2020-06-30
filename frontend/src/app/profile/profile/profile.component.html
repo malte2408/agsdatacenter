@@ -1,0 +1,56 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header card-header-danger">
+                        <h4 class="card-title ">Simple Table</h4>
+                        <p class="card-category"> Here is a subtitle for this table</p>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead class=" text-primary">
+                                <th>
+                                    Datum
+                                </th>
+                                <th>
+                                    Briefkurs
+                                </th>
+                                <th>
+                                    Geldkurs
+                                </th>
+                                <th>
+                                    AGSX-Punkte
+                                </th>
+                                <th>
+                                    CEO
+                                </th>
+                                </thead>
+                                <tbody>
+                                <tr *ngFor="let profile of profiles">
+                                    <td>
+                                        {{profile.date * 1000 | date: 'd.MM.yy, h:mm a'}}
+                                    </td>
+                                    <td>
+                                        {{profile.ask | currency:'EUR'}}
+                                    </td>
+                                    <td>
+                                        {{profile.bid | currency:'EUR'}}
+                                    </td>
+                                    <td>
+                                        {{profile.agsx}}
+                                    </td>
+                                    <td class="text-primary">
+                                        {{profile.ceo}}
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
