@@ -11,8 +11,9 @@ export class ProfileService {
     constructor(private http: HttpClient) {
     }
 
-    public getProfile(wkn: string): Observable<Profile[]> {
-        return this.http.get<Profile[]>('https://agsdatacenter.de/dev/profile?wkn=' + wkn + '&days=200')
+    public getProfile(wkn: string, days: string='365'): Observable<Profile[]> {
+
+        return this.http.get<Profile[]>('https://agsdatacenter.de/dev/profile?wkn=' + wkn + '&days=' + days)
     }
 
 

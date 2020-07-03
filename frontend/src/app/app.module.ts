@@ -16,7 +16,6 @@ import {TableListComponent} from './table-list/table-list.component';
 import {TypographyComponent} from './typography/typography.component';
 import {IconsComponent} from './icons/icons.component';
 import {NotificationsComponent} from './notifications/notifications.component';
-import {UpgradeComponent} from './upgrade/upgrade.component';
 import {
     AgmCoreModule
 } from '@agm/core';
